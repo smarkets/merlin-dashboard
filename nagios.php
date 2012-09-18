@@ -1,4 +1,23 @@
 <?php 
+# The nagios-dashboard was written by Morten Bekkelund & Jonas G. Drange in 2010
+#
+# Patched, modified and added to by various people, see README
+# Maintained as merlin-dashboard by Mattias Bergsten <mattias.bergsten@op5.com>
+#
+# Parts copyright (C) 2010 Morten Bekkelund & Jonas G. Drange
+#
+# This program is free software: you can redistribute it and/or modify
+# it under the terms of the GNU General Public License as published by
+# the Free Software Foundation, either version 3 of the License, or
+# (at your option) any later version.
+#
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+# GNU General Public License for more details.
+#
+# See: http://www.gnu.org/copyleft/gpl.html
+
     $refreshvalue = 10; //value in seconds to refresh page
     $pagetitle = "op5 Monitor Dashboard";
 ?>
