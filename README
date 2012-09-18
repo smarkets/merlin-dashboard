@@ -1,15 +1,40 @@
-Nagios Dashboard Readme
-===============================================
+README for merlin-dashboard
+===========================
+This dashboard for Nagios using the Merlin backend was originally made by Morten Bekkelund <bekkelund@gmail.com> and made available at http://dingleberry.me/2010/04/our-new-dashboard/ and later at https://github.com/mortis1337/nagios-dashboard where several people forked it.
 
-License: GPL
+Meanwhile, I and a number of other customers had been hacking on it in private, fixing bugs and adding features, but not publishing the additions.
 
-Requirements:
--Nagios
--Merlin
+This is, finally, a fork of Morten's code with the additional patches. I aim to continue maintaining this, possibly adding patches from other people's forks.
 
-Installation: 
-Download the 2 php files to your server.
-Edit merlin.php and change the user/pass/dbserver
-so it suits your environment.
+Authors
+=======
+Original project by Morten Bekkelund <bekkelund@gmail.com>.
 
+This project maintained by Mattias Bergsten <mattias.bergsten@op5.com>.
 
+Patches from the following list of fine people and companies:
+
+* Jonas Drange Grønås <jonas@drange.net>
+* IPNett AS <http://www.ipnett.no>
+* Peter Andersson <peter@it-slav.net>
+* Advance AB <http://www.advance.se>
+* Mattias Bergsten <mattias.bergsten@op5.com>
+* John Carehag <john.carehag@westbahr.com>
+
+License
+=======
+Morten's code says "GPL" but unspecified version. I'm assuming GPLv2.
+
+Requirements
+============
+* Nagios, a version that works with the Merlin version you're running
+* Merlin, pretty much any version > 1.0.0 should work fine
+* Webserver with PHP5 and MySQL support
+
+Installation
+============
+Put the files in a directory on your webserver.
+
+Ideally, symlink nagios.php to index.php to save typing.
+
+Edit merlin.php and change the server, username and password to fit your environment.
