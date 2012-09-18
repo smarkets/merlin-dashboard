@@ -1,4 +1,4 @@
-<? 
+<?php 
 # The nagios-dashboard was written by Morten Bekkelund & Jonas G. Drange in 2010
 #
 # Patched, modified and added to by various people, see README
@@ -37,7 +37,7 @@ function _print_duration($start_time, $end_time)
     <h2>Unhandled host problems</h2>
     <div class="dash_wrapper">
         <table class="dash_table">
-            <? 
+            <?php 
             $query = "select host_name, alias, count(host_name) from host where last_hard_state = 1 and problem_has_been_acknowledged = 0 and host_name not in (select distinct host_name from scheduled_downtime where start_time < unix_timestamp() and end_time > unix_timestamp() and downtime_type=2) group by host_name;";
             $result = mysql_query($query);
             $save = "";
@@ -71,7 +71,7 @@ function _print_duration($start_time, $end_time)
                 <th>Totals</th>
                 <th>%</th>
             </tr>
-            <? 
+            <?php 
             # number of hosts down
             $query = "select count(1) as count from host where last_hard_state = 1";
             $result = mysql_query($query);
@@ -126,7 +126,7 @@ function _print_duration($start_time, $end_time)
                 <td><?php print $hosts_up ?>/<?php print $total_hosts ?></td>
                 <td><?php print $hosts_up_pct ?></td>
             </tr>
-	    <? if ($hosts_down > 0) {
+	    <?php if ($hosts_down > 0) {
 		print "<tr class=\"critical total_hosts_down\">";
 	       } else {
 		print "<tr class=\"ok total_hosts_down\">";
@@ -136,7 +136,7 @@ function _print_duration($start_time, $end_time)
                 <td><?php print $hosts_down ?>/<?php print $total_hosts ?></td>
                 <td><?php print $hosts_down_pct ?></td>
             </tr>
-	    <? if ($hosts_unreach > 0) {
+	    <?php if ($hosts_unreach > 0) {
 		print "<tr class=\"critical total_hosts_unreach\">";
 	       } else {
 		print "<tr class=\"ok total_hosts_unreach\">";
@@ -151,7 +151,7 @@ function _print_duration($start_time, $end_time)
                 <td><?php print $services_ok ?>/<?php print $total_services ?></td>
                 <td><?php print $services_ok_pct ?></td>
             </tr>
-	    <? if ($services_critical > 0) {
+	    <?php if ($services_critical > 0) {
 		print "<tr class=\"critical total_services_critical\">";
 	       } else {
 		print "<tr class=\"ok total_services_critical\">";
@@ -161,7 +161,7 @@ function _print_duration($start_time, $end_time)
                 <td><?php print $services_critical ?>/<?php print $total_services ?></td>
                 <td><?php print $services_critical_pct ?></td>
             </tr>
-	    <? if ($services_warning > 0) {
+	    <?php if ($services_warning > 0) {
 		print "<tr class=\"warning total_services_warning\">";
 	       } else {
 		print "<tr class=\"ok total_services_warning\">";
@@ -179,7 +179,7 @@ function _print_duration($start_time, $end_time)
     <h2>Unhandled service problems</h2>
     <div class="dash_wrapper">
         <table class="dash_table">
-            <? 
+            <?php 
             $query = "select service.host_name,service.service_description,service.last_hard_state,service.output,service.last_hard_state_change,service.last_check from service,host where host.host_name = service.host_name and service.last_hard_state in (1,2,3) and service.problem_has_been_acknowledged = 0 and service.host_name not in (select distinct host_name from scheduled_downtime where start_time < unix_timestamp() and end_time > unix_timestamp() and downtime_type=2) and service.service_description not in (select distinct service_description from scheduled_downtime where host_name = service.host_name and start_time < unix_timestamp() and end_time > unix_timestamp() and downtime_type=1) order by service.last_hard_state;";
 
             $result = mysql_query($query);
