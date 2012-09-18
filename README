@@ -2,7 +2,7 @@ README for merlin-dashboard
 ===========================
 This dashboard for Nagios using the Merlin backend was originally made by Morten Bekkelund <bekkelund@gmail.com> and made available at http://dingleberry.me/2010/04/our-new-dashboard/ and later at https://github.com/mortis1337/nagios-dashboard where several people forked it.
 
-Meanwhile, I and a number of other customers had been hacking on it in private, fixing bugs and adding features, but not publishing the additions.
+Meanwhile, I and a number of other people had been hacking on it in private, fixing bugs and adding features, but not publishing the additions.
 
 This is, finally, a fork of Morten's code with the additional patches. I aim to continue maintaining this, possibly adding patches from other people's forks.
 
