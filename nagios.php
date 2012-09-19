@@ -25,7 +25,7 @@
 <html>
     <head>
 		<link type="image/ico" rel="icon" href="op5.ico" />
-        <title><? echo($pagetitle); ?></title>
+        <title><?php echo($pagetitle); ?></title>
         <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js">
         </script>
 		<link rel="stylesheet" type="text/css" href="nagios.css" />
