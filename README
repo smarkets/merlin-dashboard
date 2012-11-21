@@ -27,10 +27,12 @@ Morten's code says "GPL" but unspecified version. I'm assuming GPLv2.
 
 Requirements
 ============
-* Nagios, a version that works with the Merlin version you're running
-* Merlin, pretty much any version > 1.0.0 should work fine
 * Webserver with PHP5 and MySQL support
+* Nagios, a version that works with the Merlin version you're running
+* Merlin, anything > 1.0.0 and < 2.0 **
 
+** In Merlin 2.0, saving status data to the database is turned off by default. This will break the dashboard. I am currently implementing a livestatus backend for merlin-dashboard, but it will not be ready in time for release of Merlin 2.0. If you do not mind the performance penalty of writing status data to the database, you can turn it on again by adding "track_current = yes" and an import program to your merlin.conf.
+ 
 Installation
 ============
 Put the files in a directory on your webserver.
