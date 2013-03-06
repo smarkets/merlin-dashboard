@@ -42,4 +42,4 @@ Installation for Merlin version 2.x
 ===================================
 In Merlin 2.0, saving status data to the database is turned off by default. If you do not mind the performance penalty of writing status data to the database, you can turn it on again by adding "track_current = yes" and an import program to your merlin.conf, and then following the above instructions for version 1.x.
 
-In Monitor 6, we instead use Livestatus to access status data, because it is significantly faster. To use the Livestatus version, edit merlin2.php and set the path to the Livestatus socket. Symlink livestatus.php to index.php to save typing.
+In Monitor 6, we instead use Livestatus to access status data, because it is significantly faster. To use the Livestatus version, put the files on your monitoring server (where Livestatus runs), then edit merlin2.php and set the path to the Livestatus socket. Symlink livestatus.php to index.php to save typing.
