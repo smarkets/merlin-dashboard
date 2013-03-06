@@ -22,6 +22,8 @@ Patches from the following list of fine people and companies:
 * John Carehag <john.carehag@westbahr.com>
 * Misiu Pajor <misiu.pajor@op5.com>
 
+Some Livestatus socket code borrowed from the mklivestatus-slave project by Lars Michelsen at <http://git.larsmichelsen.com/git/?p=mklivestatus-slave.git>.
+
 License
 =======
 Morten's code says "GPL" but unspecified version. I'm assuming GPLv2.
