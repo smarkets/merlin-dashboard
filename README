@@ -20,6 +20,7 @@ Patches from the following list of fine people and companies:
 * Advance AB <http://www.advance.se>
 * Mattias Bergsten <mattias.bergsten@op5.com>
 * John Carehag <john.carehag@westbahr.com>
+* Anders K Lindgren <anders.k.lindgren@ericsson.com>
 * Misiu Pajor <misiu.pajor@op5.com>
 
 Some Livestatus socket code borrowed from the mklivestatus-slave project by Lars Michelsen at <http://git.larsmichelsen.com/git/?p=mklivestatus-slave.git>.
