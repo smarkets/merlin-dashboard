@@ -27,7 +27,7 @@ Some Livestatus socket code borrowed from the mklivestatus-slave project by Lars
 
 License
 =======
-Morten's code says "GPL" but unspecified version. I'm assuming GPLv2.
+GPL v3
 
 Requirements
 ============
