@@ -28,7 +28,7 @@
 
 $server = 'https://127.0.0.1';
 $user   = 'monitor';
-$pw     = 'apanbepan';
+$pw     = 'monitor';
 
 # Dashboard Title
 $title = "op5 Monitor Dashboard";

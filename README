@@ -54,6 +54,6 @@ In Monitor 6, we instead use Livestatus to access status data, because it is sig
 
 Installation for the op5 Monitor REST API
 =========================================
-Put the files in a directory on your webserver, edit merlin-api.php and update the server, user and password to use to access the API. Symlink merlin-api.php to index.php.
+Put the files in a directory on your webserver, edit merlin-api.php and update the server, user and password to use to access the API. Symlink op5monitor.php to index.php.
 
 Take a look at api-examples.html for some examples on how to define filters.
