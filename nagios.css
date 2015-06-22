@@ -138,6 +138,7 @@ h2 {
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr = '#f88017', endColorstr = '#e56717', GradientType = 0); /* IE6-9 */
     background: linear-gradient(top, #f88017 0%, #e56717 100%); /* W3C */
     color: black;
+    text-shadow: none;
 }
 
 .unknown td {
