@@ -24,6 +24,10 @@ $custom_filters = array(
   'host_name ~ ',
 );
 
+if (file_exists("config.php")) {
+    require_once("config.php");
+}
+
 function _print_duration($start_time, $end_time)
 {
                 $duration = $end_time - $start_time;
