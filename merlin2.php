@@ -127,7 +127,7 @@ function queryLivestatus($query) {
 
 $query = <<<"EOQ"
 GET hosts
-Columns: host_name alias
+Columns: host_name plugin_output
 Filter: $filter
 Filter: scheduled_downtime_depth = 0
 Filter: in_notification_period = 1
@@ -156,7 +156,7 @@ EOQ;
             ?>
             <tr class="dash_table_head">
                 <th>Hostname</th>
-                <th>Alias</th>
+                <th>Output</th>
             </tr>
             <?php print $output; ?>
             <?php
