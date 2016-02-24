@@ -31,7 +31,7 @@ if (file_exists("config.php")) {
     <head>
 		<link type="image/ico" rel="icon" href="op5.ico" />
         <title><?php echo($pagetitle); ?></title>
-        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js">
+        <script type="text/javascript" src="jquery.min.js">
         </script>
 		<link rel="stylesheet" type="text/css" href="nagios.css" />
     </head>
